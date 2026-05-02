@@ -1,0 +1,17 @@
+programa {
+  funcao inicio() {
+    real nota1, nota2, nota3, media
+
+    escreva("Qual foi a primeira nota: ")
+    leia(nota1)
+    escreva("Qual foi a segunda nota: ")
+    leia(nota2)
+    escreva("Qual foi a terceira nota: ")
+    leia(nota3)
+
+    media = (nota1 + nota2 + nota3) / 3
+
+    escreva("A média das notas, é: ", media)
+    
+  }
+}
