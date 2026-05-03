@@ -1,11 +1,19 @@
 programa {
   funcao inicio() {
-    inteiro tabuada, numero
+    inteiro notas, total, resultado, qtd
+    cadeia continuar
 
-    escreva("Digite a tabuada que deseja: ")
-    leia(tabuada)
-    para (numero = 0; numero <= 10; numero++) {
-      escreva(numero * tabuada, "\n")
+    enquanto (continuar != "N") {
+      escreva("Digite uma nota:")
+      leia(notas)
+      total += notas
+      qtd++
+
+      escreva("Deseja colocar outra nota?")
+      leia(continuar)
     }
+
+    resultado = notas / qtd
+    escreva(resultado)
   }
 }

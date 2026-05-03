@@ -1,11 +1,18 @@
 programa {
   funcao inicio() {
-    inteiro tabuada, numero
+    inteiro pares = 0, impares = 0, numeros
 
-    escreva("Digite a tabuada que deseja: ")
-    leia(tabuada)
-    para (numero = 0; numero <= 10; numero++) {
-      escreva(numero * tabuada, "\n")
+    para (inteiro i = 1; i <= 10; i++) {
+      escreva("Digite um número: ")
+      leia(numeros)
+
+      se (numeros % 2 == 0) {
+        pares++
+      } senao { 
+        impares++
+      }
     }
+
+    escreva("Ímpares: ", impares, "\n", "Pares: ", pares)
   }
 }
